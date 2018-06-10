@@ -56,15 +56,15 @@ P(A,B) = P(A)P(B)
 
 Hence, we reach to the result:
 
-P(y|x_1,...,x_n) = \frac{ P(x_1|y)P(x_2|y)...P(x_n|y)P(y)}{P(x_1)P(x_2)...P(x_n)}
+        P(y|x_1,...,x_n) = \frac{ P(x_1|y)P(x_2|y)...P(x_n|y)P(y)}{P(x_1)P(x_2)...P(x_n)}
 
-which can be expressed as:
+        which can be expressed as:
 
-P(y|x_1,...,x_n) = \frac{P(y)\prod_{i=1}^{n}P(x_i|y)}{P(x_1)P(x_2)...P(x_n)}
+        P(y|x_1,...,x_n) = \frac{P(y)\prod_{i=1}^{n}P(x_i|y)}{P(x_1)P(x_2)...P(x_n)}
 
-Now, as the denominator remains constant for a given input, we can remove that term:
+        Now, as the denominator remains constant for a given input, we can remove that term:
 
-P(y|x_1,...,x_n)\propto P(y)\prod_{i=1}^{n}P(x_i|y)
+        P(y|x_1,...,x_n)\propto P(y)\prod_{i=1}^{n}P(x_i|y)
 
 Now, we need to create a classifier model. For this, we find the probability of given set of inputs for all possible values of the class variable y and pick up the output with maximum probability. This can be expressed mathematically as:
 
